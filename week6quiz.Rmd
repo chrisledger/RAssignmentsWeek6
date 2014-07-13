@@ -1,0 +1,24 @@
+---
+title: "Week 6 Quiz"
+output: html_document
+---
+
+```{r}
+setwd('C:\\Users\\Chris\\Documents\\R')
+pizzastoredata <- read.table (file = "pizza-store-data.csv", header = TRUE, sep = ",")
+
+summary(pizzastoredata)
+
+```
+
+Columns:
+
+
+date          date field       date
+
+store         text field       name of pizza store
+
+pizzas        integer field    no. of pizzas sold
+
+customers     integer field    no. of customers
+

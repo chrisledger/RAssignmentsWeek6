@@ -1,0 +1,17 @@
+---
+title: "Week 6 Assignment"
+output: html_document
+---
+
+The following table displays the current league table for the 2014 Country Cricket Championship Division 1
+Note that all matches are played over 4 days.
+Points are gained for Wins (W), Draws (D) and Ties (T).
+Bonus points are also given for number of runs scored in first innings (Bat) and number of wickets taken in first innings (Bowl).
+Points can be deducted for preparation of a bad wicket which leads to match ending early.
+
+```{r}
+require(XML)
+theURL <- "http://www.ecb.co.uk/stats/table?competitionId=1395"
+crickettable <- readHTMLTable (theURL, which=1, header=TRUE, stringasFactors=FALSE)
+crickettable
+```
